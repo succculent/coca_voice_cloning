@@ -1,3 +1,6 @@
+import tensorflow as tf
+from tf import keras
+
 def load_data():
     # get the data paths
     train_path = os.path.join(data_path, "ptb.train.txt")

@@ -15,8 +15,9 @@ def load_txt():
         for file in data[0:10]:
             text_file = open(file, "r+")
             text = text_file.read()
-            message_embedded = session.run(embed(text))
-            print(message_embedded)
+            text_list = [text]
+            message_embeddings = session.run(embed(text_list))
+            print(message_embeddings)
             #print(text.read())
 
 
